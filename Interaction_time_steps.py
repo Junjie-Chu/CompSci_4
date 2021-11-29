@@ -53,10 +53,10 @@ def interaction_time_FA(df, tag_id, distance, time_step):
         current_data[3] = int(current_data[3] / 1000)  # Convert ms to s
 
         # track progress
-        if not (k) % progress_count:
+        #if not (k) % progress_count:
             # print('Progress: ', k/progress_count, '%')
-            bar.update(prog)
-            prog += 1
+        #    bar.update(prog)
+        #    prog += 1
 
         # Update x and y for all cows that move that time
         tag_index = tag_list.index(current_data[1])  # convert tag_id to index
@@ -79,19 +79,3 @@ def interaction_time_FA(df, tag_id, distance, time_step):
             next_timestep = current_data[3] + time_step
             int_time += time_step * close_by
     return int_time
-
-
-def main():
-    bar = progressbar.ProgressBar(max_value=100)
-    df0 = csv_read_FA('FA_example.csv', 0)
-    df0 = detect_drop_inactive_tags(df0)
-    cowlist = unique_cows(df0)
-
-    distance = 150
-    time_step = 10
-    t = interaction_time_FA(df0, cowlist, distance, time_step)
-    np.savetxt("Time_FA_example.csv", t, delimiter=",")
-
-
-if __name__ == '__main__':
-    main()

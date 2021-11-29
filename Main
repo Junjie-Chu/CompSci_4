@@ -1,0 +1,24 @@
+#import pandas as pd
+#import time
+import numpy as np
+import math as m
+from Interaction_time_steps import detect_drop_inactive_tags, interaction_time_FA
+from pycowview.data import csv_read_FA
+from pycowview.manipulate import unique_cows
+import progressbar
+
+def main():
+    print('Starting calculations.')
+    #bar = progressbar.ProgressBar(max_value=100)
+    df0 = csv_read_FA('FA_example.csv', 0)
+    df0 = detect_drop_inactive_tags(df0)
+    cowlist = unique_cows(df0)
+    print('List fixed, now calculating interaction time.')
+    distance = 150
+    time_step = 30
+    t = interaction_time_FA(df0, cowlist, distance, time_step)
+    np.savetxt("Time_FA_example.csv", t, delimiter=",")
+
+
+if __name__ == '__main__':
+    main()
