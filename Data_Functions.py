@@ -57,6 +57,7 @@ class results:
     def return_results(self):
         return self.res_bed, self.res_feed, self.res_robot, self.res_general
 
+
 class rectangle:
     def __init__(self, x1, x2, y1, y2, area):
         self.x1 = x1
@@ -82,8 +83,6 @@ def csv_read_Barn(filename):
     return df
 
 # File with area delimitation
-
-
 def define_Area(filename, max_dist_from_area):
     df = csv_read_Barn(filename)
     rectangles = []
@@ -159,12 +158,6 @@ def interaction_time_FA(df, tag_id, distance, time_step):
         current_data = data[k, :]
         current_data[3] = int(current_data[3] / 1000)  # Convert ms to s
 
-        # track progress
-        # if not (k) % progress_count:
-        # print('Progress: ', k/progress_count, '%')
-        #    bar.update(prog)
-        #    prog += 1
-
         # Update x and y for all cows that move that time
         tag_index = tag_list.index(current_data[1])  # convert tag_id to index
         current_x[tag_index] = current_data[4]
@@ -233,7 +226,7 @@ def interaction_time_FA_Area(df, tag_id, distance, time_step, rectangles):
                     else:
                         close_by[j, i] = 0
                         close_by[i, j] = 0
-            
+
             # Convert to Area specific adjecancy Matricies
             result.initialize_time_matricies(close_by)
             for k in range(num_cows):
