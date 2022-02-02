@@ -1,5 +1,10 @@
 # README
 The functions of each file are introduced.
+## cow_weighted_Louvain_\*\_area.ipynb
+Contents:
+1. An example of how to run unweighted Louvain algorithm.
+2. NMI
+3. In feeding area, some codes to check intersection between communities of 2 days are shown.
 ## clique_percolation_method.ipynb
 Contents:
 1. An example of how to run CPM algorithm.  
