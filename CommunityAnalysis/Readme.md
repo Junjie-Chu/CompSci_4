@@ -1,8 +1,8 @@
 # CompSci_4
 ## Community Analysis Part
-Author: Junjie  
-
 Introduction to each folder.  
+Author: Junjie  
+***Note: All ipynb files and py file are tested in my own PC and the random seeds are not set. So the results could differ but the codes should run well.***
 ### Dependency folders
 ***Be very careful of the paths of the following folders when trying import packages/libraries or input folder paths! Or the examples or codes cannot run!***
 #### Data folders 
