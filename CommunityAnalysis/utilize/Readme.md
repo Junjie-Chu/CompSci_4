@@ -1,6 +1,7 @@
 # Introduction to different functions
-Example of each fucntion could be found in example folder.
-If the intro is not enough, there are some more detailed comments in the source code.
+Example of each fucntion could be found in example folder.  
+If the intro is not enough, there are some more detailed comments in the source code.  
+Codes for visualization, modularity, etc. are embedded in the community detection algorithm function, pay attention to the comment out section in the source code if you want them.  
 ## utilize_general_CommunityDetectionMethods_unweighted.py
 1. Clique Percolation algorithm：community_detection_PC(i,pos,G_AM)
 2. Unweighted Louvain: community_Louvain(i,G)
