@@ -81,4 +81,5 @@ def community_Louvain(i,G):
     plt.savefig('./community/Louvain_weighted/Day%d_weighted_Community.png'%(i+1))
     #plt.show()
     '''
-    return nodes_removed, communities_Louvain, partition
+    return communities_Louvain
+    # return nodes_removed, communities_Louvain, partition
