@@ -5,7 +5,8 @@ Contents:
 1. An example of how to run weighted Louvain algorithm on different area.
 2. NMI
 3. In feeding area, some codes to check intersection between communities of 2 days are shown.
-4. In all area, there are some codes for random simulation.
+4. In all area, there are some codes for random simulation.  
+5. Errors in robot(milk) area are caused by that there is no community. Try different thresholds when building adjacency matrices.   
 ## clique_percolation_method.ipynb
 Contents:
 1. An example of how to run CPM algorithm.  
