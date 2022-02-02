@@ -5,6 +5,7 @@ Contents:
 1. An example of how to run unweighted Louvain algorithm.
 2. NMI
 3. In feeding area, some codes to check intersection between communities of 2 days are shown.
+4. In all area, there are some codes for random simulation.
 ## clique_percolation_method.ipynb
 Contents:
 1. An example of how to run CPM algorithm.  
