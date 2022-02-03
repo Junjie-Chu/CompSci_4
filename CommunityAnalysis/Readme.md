@@ -16,6 +16,8 @@ time matrices on the specific areas of barn of each day in the 2 weeks.
 ##### pycowview
 The only difference is about the onmi, the path is 'pycowview/onmi-master/'
 ### Example folder
-Examples of different functions, analyses and communitiy detection methods.
+Examples of different functions, analyses and communitiy detection methods.  
+***Note: Its own Readme.md can be found in itself. Click 'examples' and you will find it.***
 ### Utilize folder
-Functions and codes which may be utilized again!
+Functions and codes which may be utilized again.  
+***Note: Its own Readme.md can be found in itself. Click 'utilize' and you will find it.***
