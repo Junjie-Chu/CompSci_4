@@ -1,5 +1,5 @@
 # Dynamic Social Networks In Dairy Cows
-This is a part of the project *Precision livestock breeding – improving both health and production in dairy cattle*.  
+This is a part of the project ***Precision livestock breeding – improving both health and production in dairy cattle***.  
 Details of the whole project could be found here: https://www.slu.se/en/faculties/vh/research/forskningsprojekt/not/precision-livestock-breeding/  
 ## Description
 This repository consists of two parts: data process part and community analysis part.     
